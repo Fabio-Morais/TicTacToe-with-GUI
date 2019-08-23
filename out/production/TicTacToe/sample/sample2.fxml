@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane fx:id="ap" alignment="center" hgap="10" prefHeight="600.0" prefWidth="500.0" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <BorderPane prefHeight="600.0" prefWidth="500.0">
+            <center>
+                <VBox alignment="CENTER" minHeight="400.0" prefHeight="400.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <Button fx:id="buttonEasy" defaultButton="true" mnemonicParsing="false" onAction="#handleMenuSec" prefHeight="50.0" prefWidth="150.0" text="Easy Mode" wrapText="true">
+                            <VBox.margin>
+                                <Insets bottom="50.0" />
+                            </VBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font></Button>
+                        <Button fx:id="buttonMedium" defaultButton="true" mnemonicParsing="false" onAction="#handleMenuSec" prefHeight="50.0" prefWidth="150.0" text="Medium Mode" wrapText="true">
+                            <VBox.margin>
+                                <Insets bottom="50.0" />
+                            </VBox.margin>
+                     <font>
+                        <Font name="Consolas" size="14.0" />
+                     </font></Button>
+                  <Button fx:id="buttonHard" defaultButton="true" layoutX="185.0" layoutY="243.0" mnemonicParsing="false" onAction="#handleMenuSec" prefHeight="50.0" prefWidth="150.0" text="Hard Mode" wrapText="true">
+                     <font>
+                        <Font name="Consolas" size="14.0" />
+                     </font>
+                  </Button>
+                    </children>
+                    <BorderPane.margin>
+                        <Insets />
+                    </BorderPane.margin>
+                </VBox>
+            </center>
+            <bottom>
+                <Label alignment="CENTER" contentDisplay="RIGHT" prefHeight="17.0" prefWidth="512.0" text="Developer by Fábio Morais" BorderPane.alignment="CENTER">
+                    <BorderPane.margin>
+                        <Insets bottom="5.0" />
+                    </BorderPane.margin>
+                    <font>
+                        <Font name="System Italic" size="14.0" />
+                    </font></Label>
+            </bottom>
+            <top>
+                <ImageView fitHeight="115.0" fitWidth="393.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                    <image>
+                        <Image url="@../back.png" />
+                    </image>
+                    <BorderPane.margin>
+                        <Insets top="20.0" />
+                    </BorderPane.margin>
+                </ImageView>
+            </top></BorderPane>
+    </children>
+</GridPane>
